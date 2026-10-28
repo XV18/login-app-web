@@ -5,6 +5,7 @@
     font-family: "Poppins", "Segoe UI", sans-serif;
 }
 
+/* Normal: fondo con bg.jpg */
 body {
     display: flex;
     flex-direction: column;
@@ -16,6 +17,7 @@ body {
     background-size: cover;
 }
 
+/* Caja del login: 420px */
 .wrapper {
     width: 420px;
     max-width: 90%;
@@ -40,6 +42,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Inputs: 100% de ancho y 45px de alto */
 .wrapper .input-box {
     position: relative;
     width: 100%;
@@ -164,7 +167,7 @@ body {
     transform: translateY(-5px);
 }
 
-/* Pantallas hasta 800px: fondo con img1 */
+/* MEDIA QUERY 1: tablet (hasta 800px) -> otra imagen de fondo */
 @media (max-width: 800px) {
     body {
         background: url("../img/img1.jpg") no-repeat center center;
@@ -172,7 +175,7 @@ body {
     }
 }
 
-/* Pantallas hasta 450px: fondo de color #333 */
+/* MEDIA QUERY 2: movil (hasta 450px) -> fondo #333 */
 @media (max-width: 450px) {
     body {
         background: #333;
@@ -180,5 +183,10 @@ body {
 
     .wrapper {
         padding: 25px 20px;
+    }
+
+    .redes .caja {
+        width: 60px;
+        height: 60px;
     }
 }
